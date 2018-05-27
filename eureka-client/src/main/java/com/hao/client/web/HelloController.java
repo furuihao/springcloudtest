@@ -20,8 +20,14 @@ public class HelloController implements SchedualServiceHi {
         return "hi " + name + ",i am from port:" + port;
     }
 
+    /**
+     *
+     * @param name
+     * @return
+     */
     @Override
     public String sayHiFromClientOne(String name) {
         return "hi " + name + ",i am from port:" + port;
     }
+
 }
