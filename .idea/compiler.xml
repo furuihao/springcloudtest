@@ -8,13 +8,16 @@
         <outputRelativeToContentRoot value="true" />
         <module name="eureka-client" />
         <module name="sc-server" />
-        <module name="springcloudtest" />
+        <module name="service-feign" />
+        <module name="service-ribbon" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
       <module name="eureka-client" target="1.8" />
       <module name="sc-server" target="1.8" />
-      <module name="springcloudtest" target="1.5" />
+      <module name="service-feign" target="1.8" />
+      <module name="service-ribbon" target="1.8" />
+      <module name="springcloudtest" target="1.8" />
     </bytecodeTargetLevel>
   </component>
 </project>
