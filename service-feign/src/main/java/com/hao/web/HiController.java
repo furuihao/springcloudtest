@@ -14,14 +14,14 @@ import javax.annotation.Resource;
  * 在Web层的controller层，对外暴露一个”/hi”的API接口，
  * 通过上面定义的Feign客户端SchedualServiceHi 来消费服务
  */
-/*@RestController*/
+@RestController
 public class HiController {
-    /*@Resource
-    private SchedualServiceHi schedualServiceHi;*/
+    @Resource
+    private SchedualServiceHi schedualServiceHi;
 
-    /*@RequestMapping(value = "/hi",method = RequestMethod.GET)
+    @RequestMapping(value = "/hi",method = RequestMethod.GET)
     public String sayHi(@RequestParam String name){
         return schedualServiceHi.sayHiFromClientOne(name);
-    }*/
+    }
 
 }

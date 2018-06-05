@@ -12,7 +12,7 @@
     <modules>
         <module>sc-server</module>
         <module>eureka-client</module>
-        <module>service-ribbon</module>
+        <!--<module>service-ribbon</module>-->
         <module>service-feign</module>
     </modules>
 
