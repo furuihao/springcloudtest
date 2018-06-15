@@ -1,0 +1,21 @@
+spring:
+  application:
+    name: eureka-server
+
+server:
+  port: 9761
+
+eureka:
+  instance:
+    hostname: sc2
+  client:
+    #通过eureka.client.registerWithEureka：false和fetchRegistry：false来表明自己是一个eureka server.
+    registerWithEureka: false
+    fetchRegistry: false
+    serviceUrl:
+#      defaultZone: http://${eureka.instance.hostname}:${server.port}/eureka/
+      defaultZone: http://sc1:8761/eureka/
+
+
+#      0.0.0.0 sc1
+#      0.0.0.0 sc2
